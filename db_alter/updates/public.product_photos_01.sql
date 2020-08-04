@@ -8,7 +8,7 @@ ALTER TABLE IF EXISTS public.product_photos
 		REFERENCES public.products(id)
 			ON DELETE CASCADE;
 
-CREATE INDEX IF NOT EXISTS idx_product_photos_productid
+CREATE INDEX IF NOT EXISTS ix_productphotos_productid
 	ON public.product_photos(productid);
 
 ALTER TABLE IF EXISTS public.product_photos
